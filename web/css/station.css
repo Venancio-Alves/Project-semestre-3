@@ -1,0 +1,184 @@
+
+    /* Style global */
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Poppins', sans-serif;
+        /* Fond avec les mêmes couleurs */
+        color: #fff;
+        /* Texte blanc pour correspondre aux autres pages */
+        line-height: 1.6;
+    }
+
+    /* Titres */
+    h1 {
+        text-align: center;
+        color: #000;
+        margin-bottom: 20px;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    /* h2 - rendu plus esthétique */
+    h2 {
+        text-align: center;
+        font-size: 2em;
+        color: #fff;
+        background: rgba(0, 81, 255, 0.7);
+        /* Arrière-plan transparent avec la couleur utilisée */
+        padding: 10px 20px;
+        border-radius: 10px;
+        display: inline-block;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+    }
+
+    /* Conteneur pour la sélection */
+    .select-container {
+        margin: 30px auto;
+        text-align: center;
+        padding: 20px;
+        background: rgba(255, 255, 255, 0.8);
+        /* Fond translucide léger */
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+        max-width: 600px;
+    }
+
+    label {
+        font-size: 1.2em;
+        font-weight: bold;
+        color: #2c3e50;
+    }
+
+    select {
+        padding: 10px;
+        font-size: 1em;
+        border: 1px solid #34495e;
+        border-radius: 5px;
+        background: #ffffff;
+        color: #2c3e50;
+        width: 100%;
+        box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+    }
+
+    /* Sélecteur au survol */
+    select:hover {
+        background: #d0d3d4;
+        border-color: #3498db;
+        /* Bleu plus clair au survol */
+    }
+
+    /* Table des détails de la station */
+    table {
+        width: 80%;
+        margin: 20px auto;
+        border-collapse: collapse;
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.95);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        overflow: hidden;
+    }
+
+    th {
+        background: rgb(43, 60, 78);
+        color: #000;
+        font-size: 1.2em;
+        padding: 10px;
+    }
+
+    td {
+        background: #ecf0f1;
+        color: #2c3e50;
+        text-align: center;
+        padding: 10px;
+        border: 1px solid #dcdde1;
+    }
+
+    tr:nth-child(even) td {
+        background: #dcdde1;
+    }
+
+    /* Conteneur des graphiques */
+    .chart-container {
+        width: 90%;
+        margin: 30px auto;
+        padding: 20px;
+        background: rgba(255, 255, 255, 0.9);
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+        text-align: center;
+    }
+
+    canvas {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .chart-line {
+        color: #1abc9c;
+    }
+
+    .chart-bar {
+        color: #3498db;
+    }
+
+    .chart-point {
+        color: #e74c3c;
+    }
+
+    /* Boutons */
+    form input[type="submit"] {
+        background: #2980b9;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 1em;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        text-transform: uppercase;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    form input[type="submit"]:hover {
+        background: #3498db;
+        transform: translateY(-2px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+        body {
+            padding: 10px;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        .select-container,
+        .chart-container {
+            width: 100%;
+        }
+
+        h1,
+        h2 {
+            font-size: 1.5em;
+        }
+    }
+	/* Ajout pour centrer le titre et ajuster sa largeur */
+    .details-title {
+        text-align: center;
+        width: 90%; /* Aligné à la largeur des graphiques */
+        margin: 20px auto;
+        background: rgba(0, 76, 127, 0.7); /* Fond transparent */
+        padding: 10px 20px;
+        color: white;
+        font-size: 2em;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        text-transform: uppercase;
+    }
